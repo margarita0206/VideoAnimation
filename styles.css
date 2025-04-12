@@ -17,7 +17,12 @@
 .text-background {
 	position: relative;
 	z-index: 100;
-
+  
+	@media  (max-width: 768px) {
+		p {
+			font-size: 20px;
+		}
+	}
 }
 
 .text {
@@ -26,7 +31,15 @@
 	z-index: 1;
 	margin: 0;
 	color:#ffffff;
+
+	@media  (max-width: 768px) {
+		p {
+			font-size: 20px;
+		}
+	}
 }
+
+
 
 
 section p {
@@ -59,9 +72,6 @@ section video {
 	
 }
 
-
-
-
 .overlay {
 	position: absolute;
 	top: 0;
@@ -79,7 +89,8 @@ section video {
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
-	width: 900px;
+	min-width: 320px;
+	margin: 0 auto;
 }
 
 .container-one,
@@ -111,7 +122,6 @@ section video {
 	border: 1px solid #ffffff;
 	background-color:rgba(0, 0, 0, 1); 
 	margin: 10px;
-	
 }
 
 .container-one {
@@ -138,14 +148,14 @@ section video {
 	background: none;
 	border: none;
 	position: absolute;
-	width: 920px;
+	min-width: 320px;
 	padding: 20px 10px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
 	top: 0;
-	left: 0;
+
 }
 
 .container-one,
@@ -166,3 +176,5 @@ section video {
 .text-six  {
 	transform: translateX(-50px);
 }
+
+
