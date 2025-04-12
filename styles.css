@@ -39,17 +39,12 @@
 	}
 }
 
-
-
-
 section p {
 	font-family: "Boldonse";
 	font-size: 40px;
 	z-index: 1;
 	margin: 0; 
 }
-
-
 
 section {
 	position: relative;
@@ -78,8 +73,8 @@ section video {
 	left: 0;
 	width: 100%;
 	height: 100%;
-  background-color: rgba(0, 0, 0, 1); 
-  mix-blend-mode:multiply;
+	background-color: rgba(0, 0, 0, 1);
+  mix-blend-mode: multiply;
 }
 
 .container {
@@ -129,6 +124,7 @@ section video {
 	height: auto;
 }
 
+
 .container-two {
 	width: 200px;
 	height: auto; 
@@ -169,12 +165,29 @@ section video {
   margin: 10px;
 }
 
-.text-for {
-	transform: translateX(-90px);
+
+.container-free-wrapper {
+	width: 240px;
 }
 
-.text-six  {
-	transform: translateX(-50px);
+.container-two-wrapper {
+	width: 200px;
 }
 
+@media (max-width: 524px) {
+  .container-free {
+		width: 150px;
+	}
 
+	.container-free-wrapper {
+		width: 150px;
+	}
+
+	.container-for-wrapper {
+		width: 100px;
+	}
+
+	.container-for {
+		width: 100px;
+	}
+}
