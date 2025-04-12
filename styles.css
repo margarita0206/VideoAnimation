@@ -87,24 +87,6 @@ section video {
 	margin: 0 auto;
 }
 
-@media (max-width: 524px) {
-  .container-free {
-		width: 150px;
-	}
-
-	.container-free-wrapper {
-		width: 150px;
-	}
-
-	.container-for-wrapper {
-		width: 100px;
-	}
-
-	.container-for {
-		width: 100px;
-	}
-}
-
 .container-one,
 .container-two,
 .container-free,
@@ -188,4 +170,22 @@ section video {
 
 .container-two-wrapper {
 	width: 200px;
+}
+
+@media (max-width: 524px) {
+  .container-free {
+		width: 150px;
+	}
+
+	.container-free-wrapper {
+		width: 150px;
+	}
+
+	.container-for-wrapper {
+		width: 100px;
+	}
+
+	.container-for {
+		width: 100px;
+	}
 }
