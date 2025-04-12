@@ -1,0 +1,166 @@
+@font-face {
+	font-family: "Boldonse";
+	src: url("/fonts/Boldonse-Regular.ttf") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.text-background {
+	position: relative;
+	z-index: 100; /* Убедитесь, что текст выше фона */
+
+}
+
+.text {
+	font-family: "Boldonse";
+	font-size: 40px;
+	z-index: 1;
+	margin: 0;
+	color:#ffffff;
+}
+
+.text-one {
+	transform: translate(1px, -254px);
+}
+
+.text-two{
+	transform: translate(320px, -254px);
+}
+
+.text-free{
+	transform: translate(-460px, -180px);
+}
+
+.text-for{
+	transform: translate(400px, -252px);
+}
+
+.text-five{
+	transform: translate(-391px, -177px);
+}
+
+.text-six{
+	transform: translate(10px, -177px);
+}
+.text-seven{
+	transform: translate(270px, -252px);
+}
+
+section p {
+	font-family: "Boldonse";
+	font-size: 40px;
+	z-index: 1;
+	margin: 0; /* Удаление отступов вокруг текста */
+}
+
+
+
+section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end; /* Выравнивание по низу */
+	
+}
+
+section video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+
+
+
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  background-color: rgba(0, 0, 0, 1); /* Полностью черный фон */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  mix-blend-mode:multiply;*/
+}
+
+.container {
+	position: relative;
+	padding: 20px 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	width: 900px;
+}
+
+.container-one,
+.container-two,
+.container-free,
+.container-for {
+  position: relative; /* добавлено для управления псевдоэлементами */
+  padding: 20px; 
+  border: 1px solid #ffffff; 
+  background-color: transparent; /* Измените на прозрачный фон */
+  margin: 10px;
+}
+
+.background-effect {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0; /* Нажимаем на задний план */
+	background-color: #ffffff;
+}
+
+.container-one,
+.container-two,
+.container-free,
+.container-for {
+	padding: 20px; /* Отступы внутри контейнеров */
+	border: 1px solid #ffffff; /* Белая рамка */
+	background-color:rgba(0, 0, 0, 1); /* Без фона для контейнеров */
+	margin: 10px;
+	
+}
+
+.container-one {
+	width: 300px;
+	height: auto; /* Высота регулируется содержимым */
+}
+
+.container-two {
+	width: 200px;
+	height: auto; /* Высота регулируется содержимым */
+}
+
+.container-free {
+	width: 240px;
+	height: auto; /* Высота регулируется содержимым */
+}
+
+.container-for {
+	width: 500px;
+	height: auto; /* Высота регулируется содержимым */
+}
+
